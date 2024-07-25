@@ -1,0 +1,78 @@
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Adjust the gap between cards as needed */
+}
+
+.product-card-container {
+  flex: 1 1 calc(25% - 16px); /* 25% width minus the gap for 4 cards in a row */
+  max-width: calc(25% - 16px);
+  box-sizing: border-box;
+}
+
+.product-card {
+  height: 100%; /* Ensure the card takes the full height of the container */
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 240px;
+  object-fit: cover;
+}
+
+.product-card .card-body {
+  padding: 1rem; /* Adjust padding as needed */
+  flex-grow: 1;
+}
+
+.product-card .card-title {
+  margin-bottom: 0.5rem; /* Adjust margin as needed */
+}
+
+.product-card .card-text {
+  margin-bottom: 0.25rem; /* Adjust margin as needed */
+}
+
+.product-card .card-footer {
+  background-color: transparent;
+  border-top: none;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.custom-button {
+  background-color: #6e6c70; /* Replace with your desired color */
+  border-color: #5e6063; /* Replace with your desired color */
+}
+
+.custom-button:hover {
+  background-color: #a01723; /* Replace with your desired hover color */
+  border-color: #a01723; /* Replace with your desired hover color */
+}
+
+.sort-options {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sort-options .dropdown-toggle {
+  background-color: #007bff; /* Replace with your desired color */
+  border: none;
+}
+
+.sort-options .dropdown-menu {
+  text-align: center;
+}
+

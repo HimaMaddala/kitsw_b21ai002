@@ -1,17 +1,17 @@
 .product-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px; /* Adjust the gap between cards as needed */
+  gap: 16px; 
 }
 
 .product-card-container {
-  flex: 1 1 calc(25% - 16px); /* 25% width minus the gap for 4 cards in a row */
+  flex: 1 1 calc(25% - 16px);
   max-width: calc(25% - 16px);
   box-sizing: border-box;
 }
 
 .product-card {
-  height: 100%; /* Ensure the card takes the full height of the container */
+  height: 100%; 
   transition: transform 0.2s, box-shadow 0.2s;
   cursor: pointer;
   display: flex;
@@ -30,16 +30,16 @@
 }
 
 .product-card .card-body {
-  padding: 1rem; /* Adjust padding as needed */
+  padding: 1rem; 
   flex-grow: 1;
 }
 
 .product-card .card-title {
-  margin-bottom: 0.5rem; /* Adjust margin as needed */
+  margin-bottom: 0.5rem; 
 }
 
 .product-card .card-text {
-  margin-bottom: 0.25rem; /* Adjust margin as needed */
+  margin-bottom: 0.25rem;
 }
 
 .product-card .card-footer {
@@ -53,13 +53,13 @@
   margin-top: 20px;
 }
 .custom-button {
-  background-color: #6e6c70; /* Replace with your desired color */
-  border-color: #5e6063; /* Replace with your desired color */
+  background-color: #6e6c70;
+  border-color: #5e6063;
 }
 
 .custom-button:hover {
-  background-color: #a01723; /* Replace with your desired hover color */
-  border-color: #a01723; /* Replace with your desired hover color */
+  background-color: #a01723;
+  border-color: #a01723; 
 }
 
 .sort-options {
@@ -68,7 +68,7 @@
 }
 
 .sort-options .dropdown-toggle {
-  background-color: #007bff; /* Replace with your desired color */
+  background-color: #007bff;
   border: none;
 }
 

@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Card, Button, Pagination, Dropdown } from 'react-bootstrap';
-import './AllProducts.css'; // Ensure this line is present
+import './AllProducts.css';
 
 const AllProducts = () => {
   const [products, setProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [sortOption, setSortOption] = useState('default'); // default, priceAsc, priceDesc, rating
+  const [sortOption, setSortOption] = useState('default');
   const productsPerPage = 4;
 
   useEffect(() => {
@@ -22,8 +22,6 @@ const AllProducts = () => {
 
     fetchProducts();
   }, []);
-
-  // Sorting function
   const sortProducts = (products) => {
     switch (sortOption) {
       case 'priceAsc':
@@ -37,13 +35,11 @@ const AllProducts = () => {
     }
   };
 
-  // Calculate the current products to display
   const sortedProducts = sortProducts([...products]);
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
   const currentProducts = sortedProducts.slice(indexOfFirstProduct, indexOfLastProduct);
 
-  // Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
